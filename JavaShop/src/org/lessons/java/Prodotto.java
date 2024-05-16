@@ -23,11 +23,16 @@ public class Prodotto {
 		return rand;
 
 	}
+	public int ivaCal() {
+		int finalPrice = (this.prezzo * 22)/100;
+		return finalPrice;
+		
+	}
 	
-//	public int getCodice() {
-//		return rand;
-//	}
-//	
+	
+	public int getCodice() {
+		return randomNumber();
+	}
 	
 	//get&set di nome
 	public String getNome() {
@@ -37,7 +42,26 @@ public class Prodotto {
 		this.nome = nomeProdotto;
 	}
 
+	//get&set desciption
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String descriptionProdotto) {
+		this.description = descriptionProdotto;
+	}
 	
+	//get&set prezzo;
+	public int getPrezzo() {
+		return prezzo;
+	}
+	public void setPrezzo(int prezzoProdotto) {
+		this.prezzo = prezzoProdotto;
+	}
+	
+	//get iva;
+	public int getIva() {
+		return ivaCal();
+	}
 	
 
 }
